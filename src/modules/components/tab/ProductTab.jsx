@@ -1,5 +1,6 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-
+import debug from "../../../assets/CodeReporterAI.png";
+import { FaChevronRight } from "react-icons/fa6";
 const categories = [
   {
     name: "Debug AI",
@@ -146,39 +147,70 @@ export default function ProductTab() {
               {categories.map(({ name }) => (
                 <Tab
                   key={name}
-                  className="rounded-full py-2 px-5 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white"
+                  className="rounded-full py-2 px-5 text-  text-white focus:outline-none data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white"
                 >
                   {name}
                 </Tab>
               ))}
             </TabList>
           </div>
-          <TabPanels className="mt-3">
+          <TabPanels className="mt-[7rem]">
             {categories.map(({ name, posts }) => (
-              <TabPanel key={name} className="rounded-xl bg-white/5 p-3">
-                <ul>
-                  {posts.map((post) => (
-                    <li
-                      key={post.id}
-                      className="relative rounded-md p-3 text-sm/6 transition hover:bg-white/5"
-                    >
-                      <a href="#" className="font-semibold text-white">
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </a>
-                      <ul
-                        className="flex gap-2 text-white/50"
-                        aria-hidden="true"
-                      >
-                        <li>{post.date}</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.commentCount} comments</li>
-                        <li aria-hidden="true">&middot;</li>
-                        <li>{post.shareCount} shares</li>
-                      </ul>
-                    </li>
-                  ))}
-                </ul>
+              //     rounded-xl bg-white/5 p-3
+              <TabPanel key={name} className="">
+                <div className="grid grid-cols-2 text-white">
+                  <div className="col-span-1 w-[500px]">
+                    <h3 className="text-[2rem] ">
+                      Automated Code Troubleshooting with Debug AI{" "}
+                    </h3>
+                    <p className="my-5">
+                      Debug AI streamlines the debugging workflow by
+                      meticulously scanning your code and delivering actionable
+                      recommendations to swiftly address issues.{" "}
+                    </p>
+                    <div className="mt-10">
+                      <div className="flex flex-col gap-5">
+                        <div className="flex gap-3 items-start">
+                          <div className="w-[8px] h-[8px] bg-custom-gradient rounded-full mt-1.5" />
+                          <h4>
+                            Automatically detects and highlights code
+                            inconsistencies.
+                          </h4>
+                        </div>
+                        <div className="flex gap-3 items-start">
+                          <div className="w-[8px] h-[8px] bg-custom-gradient rounded-full mt-1.5" />
+                          <h4>
+                            Compatible with a wide range of programming
+                            languages for flexible debugging.
+                          </h4>
+                        </div>
+                        <div className="flex gap-3 items-start">
+                          <div className="w-[8px] h-[8px] bg-custom-gradient rounded-full mt-1.5" />
+                          <h4>
+                            Automatically detects and highlights code
+                            inconsistencies.
+                          </h4>
+                        </div>
+                        <div className="flex gap-3 items-start">
+                          <div className="w-[8px] h-[8px] bg-custom-gradient rounded-full mt-1.5" />
+                          <h4>
+                            Automatically detects and highlights code
+                            inconsistencies.
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <button className=" mt-7 flex items-center gap-2 px-5 h-[47px] text-xs font-medium tracking-[2.4px] uppercase text-white  bg-custom-gradient shadow-[0_-1px_10px_0px_rgba(153,0,255,0.15)] rounded-[6rem]">
+                      Learn More
+                      <span>
+                        <FaChevronRight />
+                      </span>
+                    </button>
+                  </div>
+                  <div className="col-span-1flex justify-center">
+                    <img className="rounded-[1.2rem]" src={debug} />
+                  </div>
+                </div>
               </TabPanel>
             ))}
           </TabPanels>
