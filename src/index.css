@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.prime-line-divider {
+  opacity: 0.6;
+  background-image: radial-gradient(circle, #3F0EFA, #e18b3f17);
+  width: 1200px;
+  height: 1px;
+  margin-bottom: 2rem;
+}
