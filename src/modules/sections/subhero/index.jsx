@@ -79,26 +79,61 @@ export default function SubHero() {
             </div>
           </div>
           <div className="w-[80px] h-full bg-white/5 rounded-full border border-[#ffffff14] flex flex-col gap-5 items-center py-3">
-            <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-              <VscDebug className="text-[20px]" />
+            <div className="relative group">
+              <div className="cursor-pointer bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                <VscDebug className="text-[20px]" />
+              </div>
+              <div className="absolute bottom-full mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Debug AI
+              </div>
             </div>
-            <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-              <MdFiberSmartRecord className="text-[20px]" />
+            <div className="relative group">
+              <div className="cursor-pointer bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                <MdFiberSmartRecord className="text-[20px]" />
+              </div>
+              <div className="absolute bottom-full mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                SmartCode AI
+              </div>
             </div>
-            <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-              <SiBuildkite className="text-[20px]" />
+            <div className="relative group">
+              <div className=" cursor-pointer bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                <SiBuildkite className="text-[20px]" />
+              </div>
+              <div className="absolute bottom-full mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                BuildSite AI
+              </div>
             </div>
-            <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-              <SiDatabricks className="text-[20px]" />
+            <div className="relative group">
+              <div className="cursor-pointer bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                <SiDatabricks className="text-[20px]" />
+              </div>
+              <div className="absolute bottom-full mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                DataFix AI
+              </div>
             </div>
-            <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-              <GrHost className="text-[20px]" />
+            <div className="relative group">
+              <div className="cursor-pointer bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                <GrHost className="text-[20px]" />
+              </div>
+              <div className="absolute bottom-full mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                HostEase AI
+              </div>
             </div>
-            <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-              <IoCodeSlash className="text-[20px]" />
+            <div className="relative group">
+              <div className="cursor-pointer bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                <IoCodeSlash className="text-[20px]" />
+              </div>
+              <div className="absolute bottom-full mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                CodeEdge AI
+              </div>
             </div>
-            <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-              <SiSololearn className="text-[20px]" />
+            <div className="relative group">
+              <div className="cursor-pointer bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                <SiSololearn className="text-[20px]" />
+              </div>
+              <div className="absolute bottom-full mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Learn AI
+              </div>
             </div>
           </div>
         </div>
