@@ -30,7 +30,7 @@ export default function Navbar() {
             <TbMenu />
           </div>
           <div className="md:flex hidden ">
-            <button className="flex items-center gap-2 px-5 h-[47px] text-xs font-medium tracking-[2.4px] uppercase text-white  bg-custom-gradient shadow-[0_-1px_10px_0px_rgba(153,0,255,0.15)] rounded-[6rem]">
+            <button className="flex items-center gap-2 px-5 h-[47px] text-xs font-medium tracking-[2.4px] uppercase text-white  bg-custom-gradient hover:bg-custom-gradientt shadow-[0_-1px_10px_0px_rgba(153,0,255,0.15)] rounded-[6rem] transition-all ease-linear duration-[250ms]">
               Whitepaper
               <span>
                 <FaChevronRight />

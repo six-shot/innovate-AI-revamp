@@ -7,6 +7,7 @@ import Products from "./modules/sections/products";
 import Footer from "./modules/sections/footer";
 import BottomFooter from "./modules/sections/bottomfooter";
 import Varieties from "./modules/sections/varieties";
+import { HeroParallaxDemo } from "./modules/components/ui/HeroDemo";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <SubHero />
       <Products />
+      <HeroParallaxDemo />
       <Varieties />
       <Footer />
       <BottomFooter />
