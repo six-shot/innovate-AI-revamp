@@ -3,7 +3,7 @@ import { FaChevronRight } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center mt-[6.5rem] text-white md:px-0 px-[1rem]">
+    <div className="flex flex-col items-center justify-center md:mt-[6.5rem] mt-[3rem] text-white md:px-0 px-[1rem]">
       <div className="flex gap-3 items-center text-[white] h-[41px] px-[1.25rem]  border border-[#ffffff1f] bg-[#0f0f0f] rounded-[6rem] text-sm">
         <div className="w-[15px] h-[1px] bg-[#90f]" />
         <h4>Unlock Your Creative Potentials</h4>

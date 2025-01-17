@@ -5,6 +5,7 @@ import { SiBuildkite, SiDatabricks, SiSololearn } from "react-icons/si";
 import { GrHost } from "react-icons/gr";
 import { IoCodeSlash } from "react-icons/io5";
 import sound from "../../../assets/sound.png";
+import { Textarea } from "@headlessui/react";
 export default function SubHero() {
   return (
     <div className="my-20 overflow-x-hidden ">
@@ -14,11 +15,11 @@ export default function SubHero() {
           <div className="grid md:grid-cols-6  grid-cols-1 md:gap-5 w-full">
             <div className="md:col-span-2 flex flex-col justify-between bg-white/5 h-[500px] w-full rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
               <div>
-                <h4 className="text-[1.7rem]"> Debug AI </h4>
+                <h4 className="md:text-[1.7rem] text-[1.2rem]"> Debug AI </h4>
                 <div className="flex flex-col  gap-1">
                   <div className="mt-2">
                     <p className="text-xs mb-2">Enter Challenges</p>
-                    <div className="w-full h-[50px] border border-[#ffffffb6] rounded-[0.5rem]">
+                    <div className="w-full md:h-[50px] h-[43px] border border-[#ffffffb6] rounded-[0.5rem]">
                       <input
                         type="text"
                         className="w-full h-full bg-transparent outline-none px-3 placeholder:text-sm"
@@ -28,7 +29,7 @@ export default function SubHero() {
                   </div>
                   <div className="mt-2">
                     <p className="text-xs mb-2">Enter Language</p>
-                    <div className="w-full h-[50px] border border-[#ffffffb6] rounded-[0.5rem]">
+                    <div className="w-full md:h-[50px] h-[43px] border border-[#ffffffb6] rounded-[0.5rem]">
                       <input
                         type="text"
                         className="w-full h-full bg-transparent outline-none px-3 placeholder:text-sm"
@@ -39,9 +40,9 @@ export default function SubHero() {
                   <div className="mt-2">
                     <p className="text-xs mb-2">Enter your purpose prompt </p>
                     <div className="w-full h-[120px] border border-[#ffffffb6] rounded-[0.5rem]">
-                      <input
+                      <Textarea
                         type="text"
-                        className="w-full h-full bg-transparent outline-none px-3 placeholder:text-sm"
+                        className="w-full h-full bg-transparent outline-none p-3  placeholder:text-sm"
                       />
                     </div>
                   </div>
