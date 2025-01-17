@@ -5,9 +5,9 @@ import { TbMenu } from "react-icons/tb";
 
 export default function Navbar() {
   return (
-    <div className="relative">
+    <div className="relative bg-transparent">
       <div className="max-w-[1440px] mx-auto  ">
-        <div className="flex justify-between items-center md:px-[2rem] px-[1rem] h-[86px] relative z-[10] ">
+        <div className="flex justify-between items-center md:px-[2rem] px-[1rem] h-[86px] relative ">
           <div className="flex gap-[1.5rem] items-center  pl-1 pr-2 py-1 rounded-full">
             <div className="flex items-center gap-2">
               <img

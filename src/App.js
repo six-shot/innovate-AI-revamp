@@ -8,12 +8,15 @@ import Footer from "./modules/sections/footer";
 import BottomFooter from "./modules/sections/bottomfooter";
 import Varieties from "./modules/sections/varieties";
 import { HeroParallaxDemo } from "./modules/components/ui/HeroDemo";
+import { SpotlightPreview } from "./modules/components/ui/SpotlightPreview";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
+      
+      <SpotlightPreview/>
+
+    
       <SubHero />
       <Products />
       <HeroParallaxDemo />
