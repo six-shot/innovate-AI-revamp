@@ -13,14 +13,10 @@ import { SpotlightPreview } from "./modules/components/ui/SpotlightPreview";
 function App() {
   return (
     <div>
-      
       <SpotlightPreview/>
-
-    
       <SubHero />
       <Products />
       <HeroParallaxDemo />
-      <Varieties />
       <Footer />
       <BottomFooter />
     </div>
