@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { VscDebug } from "react-icons/vsc";
 import { MdFiberSmartRecord } from "react-icons/md";
 import { SiBuildkite, SiDatabricks, SiSololearn } from "react-icons/si";
@@ -7,6 +7,33 @@ import { IoCodeSlash } from "react-icons/io5";
 import sound from "../../../assets/sound.png";
 import { Textarea } from "@headlessui/react";
 export default function SubHero() {
+    const [activeName, setActiveName] = useState("Debug AI");
+  const items = [
+    { id: 1, icon: <VscDebug className="text-[20px]" />, label: "Debug AI" },
+    {
+      id: 2,
+      icon: <MdFiberSmartRecord className="text-[20px]" />,
+      label: "SmartCode AI",
+    },
+    {
+      id: 3,
+      icon: <SiBuildkite className="text-[20px]" />,
+      label: "BuildSite AI",
+    },
+    {
+      id: 4,
+      icon: <SiDatabricks className="text-[20px]" />,
+      label: "DataFix AI",
+    },
+    { id: 5, icon: <GrHost className="text-[20px]" />, label: "HostEase AI" },
+    {
+      id: 6,
+      icon: <IoCodeSlash className="text-[20px]" />,
+      label: "CodeEdge AI",
+    },
+    { id: 7, icon: <SiSololearn className="text-[20px]" />, label: "Learn AI" },
+  ];
+
   return (
     <div className="my-20 overflow-x-hidden ">
       {" "}
@@ -15,7 +42,7 @@ export default function SubHero() {
           <div className="grid md:grid-cols-6  grid-cols-1 md:gap-5 w-full">
             <div className="md:col-span-2 flex flex-col justify-between bg-white/5 h-[500px] w-full rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
               <div>
-                <h4 className="md:text-[1.7rem] text-[1.2rem]"> Debug AI </h4>
+                <h4 className="md:text-[1.7rem] text-[1.2rem]">{activeName}</h4>
                 <div className="flex flex-col  gap-1">
                   <div className="mt-2">
                     <p className="text-xs mb-2">Enter Challenges</p>
@@ -78,62 +105,20 @@ export default function SubHero() {
             </div>
           </div>
           <div className="w-[80px] h-full bg-white/5 rounded-full border border-[#ffffff14] flex flex-col gap-5 items-center py-3">
-            <div className="relative group cursor-pointer">
-              <div className=" bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-                <VscDebug className="text-[20px]" />
+            {items.map((item) => (
+              <div
+                key={item.id}
+                onClick={() => setActiveName(item.label)}
+                className="relative group cursor-pointer"
+              >
+                <div className="bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
+                  {item.icon}
+                </div>
+                <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {item.label}
+                </div>
               </div>
-              <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Debug AI
-              </div>
-            </div>
-            <div className="relative group cursor-pointer">
-              <div className=" bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-                <MdFiberSmartRecord className="text-[20px]" />
-              </div>
-              <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                SmartCode AI
-              </div>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <div className=" bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-                <SiBuildkite className="text-[20px]" />
-              </div>
-              <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                BuildSite AI
-              </div>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <div className=" bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-                <SiDatabricks className="text-[20px]" />
-              </div>
-              <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                DataFix AI
-              </div>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <div className=" bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-                <GrHost className="text-[20px]" />
-              </div>
-              <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                HostEase AI
-              </div>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <div className=" bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-                <IoCodeSlash className="text-[20px]" />
-              </div>
-              <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                CodeEdge AI
-              </div>
-            </div>
-            <div className="relative group  cursor-pointer">
-              <div className=" bg-[#0f1118] w-[50px] h-[50px] rounded-full flex items-center justify-center text-white">
-                <SiSololearn className="text-[20px]" />
-              </div>
-              <div className="absolute top-0 mb-2 w-max px-2 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Learn AI
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
