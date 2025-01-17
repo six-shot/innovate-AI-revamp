@@ -9,12 +9,12 @@ export default function SubHero() {
   return (
     <div className="my-20 ">
       {" "}
-      <div className=" px-[14rem] text-white">
+      <div className=" max-w-[1440px] mx-auto px-[2rem] text-white">
         <div className="flex  gap-6">
           <div className="grid grid-cols-6 gap-5 w-full">
             <div className="col-span-2 flex flex-col justify-between bg-white/5 h-[500px] w-full rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
               <div>
-                <h4 className="text-[1.7rem]"> Code Troubleshooter </h4>
+                <h4 className="text-[1.7rem]"> Debug AI </h4>
                 <div className="flex flex-col  gap-1">
                   <div className="mt-2">
                     <p className="text-xs mb-2">Enter Challenges</p>
@@ -56,19 +56,18 @@ export default function SubHero() {
                 <div className="bg-white/5 h-[60%] rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
                   <h4 className="text-[1.7rem] mb-5"> Output Code</h4>
                   <h5>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odit quod reprehenderit ipsam similique reiciendis corrupti,
-                    exercitationem, dolor aliquid sit, error omnis quis? Illum
-                    distinctio nesciunt qui quod, sequi quidem
-                    voluptatibus!Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Odit quod reprehenderit ipsam similique
-                    reiciendis corrupti, exercitationem, dolor aliquid sit,
-                    error omnis quis? Illum distinctio nesciunt qui quod, sequi
-                    quidem voluptatibus! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Odit quod reprehenderit ipsam similique
-                    reiciendis corrupti, exercitationem, dolor aliquid sit,
-                    error omnis quis? Illum distinctio nesciunt qui quod, sequi
-                    quidem voluptatibus!
+                 
+                    Hey, welcome to Quill AI! Quill is an AI toolkit that
+                    revolutionizes innovation with its no-code products. With
+                    Quill, you can write code without any development knowledge,
+                    validate and debug your existing code, and create no-code,
+                    drag-and-drop websites effortlessly. Hosting? We've got you
+                    covered—all through our comprehensive set of toolkits.
+                    Whether you're a beginner or a seasoned developer, Quill
+                    empowers you to bring your ideas to life faster than ever.
+                    Say goodbye to complexity and hello to seamless creativity
+                    with Quill AI, where innovation meets simplicity. Let's
+                    build the future together!
                   </h5>
                 </div>
 

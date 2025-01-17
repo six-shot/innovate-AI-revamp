@@ -1,5 +1,11 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import debug from "../../../assets/CodeReporterAI.png";
+import smartcodeai from "../../../assets/CodeAI.png";
+import buildsiteai from "../../../assets/DevelopAI.png";
+import datafixai from "../../../assets/ValidationAI.png";
+import hosteaseai from "../../../assets/StaticHostingAI.png";
+import codeedgeai from "../../../assets/EditorAI.png";
+import learnai from "../../../assets/TeacherAI.png";
 import { FaChevronRight } from "react-icons/fa6";
 
 const categories = [
@@ -15,6 +21,7 @@ const categories = [
       "Offers practical solutions for identified code problems.",
       "Recommends optimizations and performance enhancements based on comprehensive analysis.",
     ],
+    image: debug, // Image for Debug AI
   },
   {
     name: "SmartCode AI",
@@ -28,6 +35,7 @@ const categories = [
       "Supports numerous programming languages for extensive applicability.",
       "Promotes best practices and efficient coding methodologies.",
     ],
+    image: smartcodeai, // Image for SmartCode AI
   },
   {
     name: "BuildSite AI",
@@ -41,6 +49,7 @@ const categories = [
       "Automates deployment with clean, scalable code.",
       "Allows customization and integration of additional features as needed.",
     ],
+    image: buildsiteai, // Image for BuildSite AI
   },
   {
     name: "DataFix AI",
@@ -54,6 +63,7 @@ const categories = [
       "Provides instant feedback on validation errors to users.",
       "Easily integrates with existing applications and frameworks.",
     ],
+    image: datafixai, // Image for DataFix AI
   },
   {
     name: "HostEase AI",
@@ -67,6 +77,7 @@ const categories = [
       "Automatically sets up HTTPS and security features.",
       "Offers scalable hosting solutions with zero configuration needed.",
     ],
+    image: hosteaseai, // Image for HostEase AI
   },
   {
     name: "CodeEdge AI",
@@ -81,6 +92,7 @@ const categories = [
       "Suggests performance and efficiency improvements.",
       "Provides step-by-step explanations for all modifications.",
     ],
+    image: codeedgeai, // Image for CodeEdge AI
   },
   {
     name: "Learn AI",
@@ -94,12 +106,13 @@ const categories = [
       "Encourages learning through interactive questions and clarifications.",
       "Focuses on simplicity with clear and concise explanations.",
     ],
+    image: learnai, // Image for Learn AI
   },
 ];
 
 export default function ProductTab() {
   return (
-    <div className="flex h-screen w-full pt-24 px-4">
+    <div className="flex  w-full py-24 px-4">
       <div className="w-full">
         <TabGroup>
           <div className="flex justify-center">
@@ -115,39 +128,41 @@ export default function ProductTab() {
             </TabList>
           </div>
           <TabPanels className="mt-[7rem]">
-            {categories.map(({ name, description, content, features }) => (
-              <TabPanel key={name}>
-                <div className="grid grid-cols-2 text-white">
-                  <div className="col-span-1 w-[500px]">
-                    <h3 className="text-[2rem]">{description}</h3>
-                    <p className="my-5">{content}</p>
-                    <div className="mt-10">
-                      <div className="flex flex-col gap-5">
-                        {features.map((feature, index) => (
-                          <div key={index} className="flex gap-3 items-start">
-                            <div className="w-[8px] h-[8px] bg-custom-gradient rounded-full mt-1.5" />
-                            <h4>{feature}</h4>
-                          </div>
-                        ))}
+            {categories.map(
+              ({ name, description, content, features, image }) => (
+                <TabPanel key={name}>
+                  <div className="grid grid-cols-2 text-white">
+                    <div className="col-span-1 w-[500px]">
+                      <h3 className="text-[2rem]">{description}</h3>
+                      <p className="my-5">{content}</p>
+                      <div className="mt-10">
+                        <div className="flex flex-col gap-5">
+                          {features.map((feature, index) => (
+                            <div key={index} className="flex gap-3 items-start">
+                              <div className="w-[8px] h-[8px] bg-custom-gradient rounded-full mt-1.5" />
+                              <h4>{feature}</h4>
+                            </div>
+                          ))}
+                        </div>
                       </div>
+                      <button className="mt-7 flex items-center gap-2 px-5 h-[47px] text-xs font-medium tracking-[2.4px] uppercase text-white bg-custom-gradient shadow-[0_-1px_10px_0px_rgba(153,0,255,0.15)] rounded-[6rem]">
+                        Get Started
+                        <span>
+                          <FaChevronRight />
+                        </span>
+                      </button>
                     </div>
-                    <button className="mt-7 flex items-center gap-2 px-5 h-[47px] text-xs font-medium tracking-[2.4px] uppercase text-white bg-custom-gradient shadow-[0_-1px_10px_0px_rgba(153,0,255,0.15)] rounded-[6rem]">
-                      Get Started
-                      <span>
-                        <FaChevronRight />
-                      </span>
-                    </button>
+                    <div className="col-span-1 flex justify-center">
+                      <img
+                        className="rounded-[1.2rem]"
+                        src={image}
+                        alt={name}
+                      />
+                    </div>
                   </div>
-                  <div className="col-span-1 flex justify-center">
-                    <img
-                      className="rounded-[1.2rem]"
-                      src={debug}
-                      alt="Debug AI"
-                    />
-                  </div>
-                </div>
-              </TabPanel>
-            ))}
+                </TabPanel>
+              )
+            )}
           </TabPanels>
         </TabGroup>
       </div>

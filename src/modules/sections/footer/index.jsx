@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../../assets/Innov-CkOF4qej.png";
+import quill from "../../../assets/Logo1.png";
 
 export default function Footer() {
   return (
@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="flex justify-between">
         <div className="w-[40%]">
           <div className="flex items-center gap-3">
-            <img className="w-[50px]" src={logo} />
-            <h4 className="text-[2rem] ">INNOVATE AI</h4>
+            <img className="w-[50px]" src={quill} />
+            <h4 className="text-[2rem] ">QUILL AI</h4>
           </div>
         </div>
         <div className="w-[60%] flex gap-[12rem]">

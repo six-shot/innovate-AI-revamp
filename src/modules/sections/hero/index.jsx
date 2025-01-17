@@ -10,10 +10,10 @@ export default function Hero() {
         <div className="w-[15px] h-[1px] bg-[#90f]" />
       </div>
       <h1 className="md:text-[5rem] text-[3rem] font-medium leading-[1] text-white text-center mt-10">
-        Fatest and Easiest way <br className="" /> to generate your websites
+        The Ultimate AI Toolkit for <br className="" /> Innovation and Creation
       </h1>
       <p className="text-[#c2c2c2] leading-[1.6] tracking-[-.02rem] text-[#fff9] w-[500px] text-center mt-8">
-        Get Your Business Online Fast with the #1 AI Website Builder—No Design
+        Get Your Projects Online Fast with the #1 AI Toolkit—No Coding or Design
         Skills Needed
       </p>
       <button className="flex mt-10 items-center gap-2 px-5 h-[47px] text-xs font-medium tracking-[2.4px] uppercase text-white  bg-custom-gradient shadow-[0_-1px_10px_0px_rgba(153,0,255,0.15)] rounded-[6rem]">

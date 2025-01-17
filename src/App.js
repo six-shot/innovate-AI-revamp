@@ -7,17 +7,22 @@ import Products from "./modules/sections/products";
 import CTA from "./modules/sections/cta";
 import Footer from "./modules/sections/footer";
 import BottomFooter from "./modules/sections/bottomfooter";
+import WebsiteTab from "./modules/components/tab/WebsiteTab";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Hero />
-      <SubHero/>
-      <Products/>
-      <CTA/>
-      <Footer/>
-      <BottomFooter/>
+      <SubHero />
+      <Products />
+      <CTA />
+      <div className="max-w-[1440px] mx-auto px-[5rem]">
+        <WebsiteTab />
+      </div>
+      <Footer />
+
+      <BottomFooter />
     </div>
   );
 }
