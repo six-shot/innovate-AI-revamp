@@ -116,7 +116,7 @@ export default function ProductTab() {
       <div className="w-full">
         <TabGroup>
           <div className="flex justify-center">
-            <TabList className="flex gap-4">
+            <TabList className="flex flex-wrap justify-center items-center gap-4">
               {categories.map(({ name }) => (
                 <Tab
                   key={name}
@@ -131,8 +131,8 @@ export default function ProductTab() {
             {categories.map(
               ({ name, description, content, features, image }) => (
                 <TabPanel key={name}>
-                  <div className="grid grid-cols-2 text-white">
-                    <div className="col-span-1 w-[500px]">
+                  <div className="grid md:grid-cols-2 text-white">
+                    <div className="col-span-1 md:w-[500px]">
                       <h3 className="text-[2rem]">{description}</h3>
                       <p className="my-5">{content}</p>
                       <div className="mt-10">

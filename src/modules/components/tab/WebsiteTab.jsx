@@ -51,7 +51,7 @@ export default function WebsiteTab() {
         <TabGroup>
           {/* Tab Navigation */}
           <div className="flex justify-center">
-            <TabList className="flex gap-4 border border-[#ffffff1f] p-2 rounded-full">
+            <TabList className="flex flex-wrap justify-center items-center gap-4 md:border md:border-[#ffffff1f] p-2 rounded-full">
               {categories.map(({ name }) => (
                 <Tab
                   key={name}
@@ -67,7 +67,7 @@ export default function WebsiteTab() {
           <TabPanels className="mt-[4rem]">
             {categories.map(({ name, images }) => (
               <TabPanel key={name}>
-                <div className="grid grid-cols-3 gap-6 text-white">
+                <div className="grid md:grid-cols-3 gap-6 text-white">
                   {images.map((image, index) => (
                     <img
                       key={index}

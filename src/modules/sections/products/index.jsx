@@ -49,7 +49,7 @@ export default function Products() {
     },
   ];
   return (
-    <div className="max-w-[1440px] mx-auto px-[2rem]">
+    <div className="max-w-[1440px] mx-auto md:px-[2rem] px-[1rem]">
       <div className="flex flex-col items-start">
         <div className="flex gap-3 items-center text-[white] h-[41px] px-[1.25rem]  border border-[#ffffff1f] bg-[#0f0f0f] rounded-[6rem] text-sm">
           <div className="w-[15px] h-[1px] bg-[#90f]" />
@@ -61,7 +61,7 @@ export default function Products() {
         Your Go-To AI Toolkit for
         <br className="" /> Building and Creating using Quill AI
       </h2>
-      <p className="text-[#c2c2c2] leading-[1.6] tracking-[-.02rem] text-[#fff9] w-[500px]  my-6">
+      <p className="text-[#c2c2c2] leading-[1.6] tracking-[-.02rem] text-[#fff9] md:w-[500px]  my-6">
         Build websites, enhance code, host projects, and more—empowered by the
         leading AI innovation platform, no technical skills needed.
       </p>
@@ -71,11 +71,11 @@ export default function Products() {
           <FaChevronRight />
         </span>
       </button>
-      <div className="grid grid-cols-8 gap-6 mt-20 text-white">
+      <div className="grid md:grid-cols-8 grid-cols-1 gap-6 mt-20 text-white">
         {aiTools.map((tool, index) => (
           <div
             key={index}
-            className={`relative col-span-${
+            className={`relative md:col-span-${
               tool.colSpan || 2
             } bg-white/5 h-[350px] rounded-[1.5rem] border border-[#ffffff14] p-5 text-center flex flex-col justify-end items-center cursor-pointer`}
             style={{
