@@ -11,7 +11,7 @@ export default function Footer() {
             <h4 className="text-[2rem] ">QUILL AI</h4>
           </div>
         </div>
-        <div className="md:w-[60%] flex flex-wrap gap-[5rem]  md:gap-[12rem]">
+        {/* <div className="md:w-[60%] flex flex-wrap gap-[5rem]  md:gap-[12rem]">
           <div className="flex flex-col">
             <h5 className="">Links</h5>
             <ul className="flex flex-col gap-3 mt-5">
@@ -41,7 +41,7 @@ export default function Footer() {
            
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
