@@ -46,7 +46,7 @@ const categories = [
 
 export default function WebsiteTab() {
   return (
-    <div className="flex w-full py-24 px-4">
+    <div className="flex w-full  px-4">
       <div className="w-full">
         <TabGroup>
           {/* Tab Navigation */}
