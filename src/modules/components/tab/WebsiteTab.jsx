@@ -34,13 +34,14 @@ const categories = [
     name: "E-commerce",
     images: [ecommerce1, ecommerce2, ecommerce3, ecommerce4], // Example images for E-commerce
   },
-  {
-    name: "AI",
-    images: [ai1, ai2, ai3, ai4], // Example images for AI
-  },
+
   {
     name: "Portfolio",
     images: [portfolio1, portfolio2, portfolio3], // Example images for Portfolio
+  },
+  {
+    name: "AI",
+    images: [ai1, ai2, ai3, ai4], // Example images for AI
   },
 ];
 
