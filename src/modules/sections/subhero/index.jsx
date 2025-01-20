@@ -18,7 +18,7 @@ export default function SubHero() {
     {
       id: 3,
       icon: <SiBuildkite className="text-[20px]" />,
-      label: "BuildSite AI",
+      label: "Website AI",
     },
     {
       id: 4,
@@ -39,8 +39,8 @@ export default function SubHero() {
       {" "}
       <div className=" max-w-[1440px] mx-auto md:px-[2rem] px-[1rem] text-white">
         <div className="flex  md:gap-6 gap-4">
-          <div className="grid md:grid-cols-6  grid-cols-1 md:gap-5 w-full">
-            <div className="md:col-span-2 flex flex-col justify-between bg-white/5 h-[500px] w-full rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
+          <div className="grid lg:grid-cols-6  grid-cols-1 lg:gap-5 w-full">
+            <div className="lg:col-span-2 flex flex-col justify-between bg-white/5 h-[500px] w-full rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
               <div>
                 <h4 className="md:text-[1.7rem] text-[1.2rem]">{activeName}</h4>
                 <div className="flex flex-col  gap-1">
@@ -79,7 +79,7 @@ export default function SubHero() {
                 Generate
               </button>
             </div>
-            <div className="md:flex hidden md:col-span-4  h-[500px] w-full ">
+            <div className="lg:flex hidden md:col-span-4  h-[500px] w-full ">
               <div className="flex flex-col gap-5 h-full">
                 <div className="bg-white/5 h-[60%] rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
                   <h4 className="text-[1.7rem] mb-5"> Output Code</h4>
@@ -122,7 +122,7 @@ export default function SubHero() {
           </div>
         </div>
       </div>
-      <div className="md:hidden flex md:col-span-4   w-full px-[1rem] mt-5 text-white ">
+      <div className="lg:hidden flex md:col-span-4   w-full px-[1rem] mt-5 text-white ">
         <div className="flex flex-col gap-5 h-full">
           <div className="bg-white/5 h-[60%] rounded-[1.5rem] border border-[#ffffff14] py-5 px-5">
             <h4 className="text-[1.7rem] mb-5"> Output Code</h4>
@@ -146,8 +146,8 @@ export default function SubHero() {
         </div>
       </div>
       <div className="flex justify-center my-10 md:px-0 px-[2rem]">
-        <div className="md:border border-[#ffffff1f] md:bg-[#0f0f0f] rounded-full ">
-          <div className="flex flex-wrap justify-center gap-10 items-center  w-auto md:h-[41px] h-full px-[1.25rem] text-white    ">
+        <div className="lg:border border-[#ffffff1f] lg:bg-[#0f0f0f] rounded-full ">
+          <div className="flex flex-wrap justify-center gap-10 items-center  w-auto lg:h-[41px] h-full px-[1.25rem] text-white    ">
             <div className="flex items-center gap-2">
               <VscDebug className="text-[20px]" />
               <h4>Debug AI</h4>
@@ -158,7 +158,7 @@ export default function SubHero() {
             </div>
             <div className="flex items-center gap-2">
               <SiBuildkite className="text-[20px]" />
-              <h4>BuildSite AI</h4>
+              <h4>Website AI</h4>
             </div>
             <div className="flex items-center gap-2">
               <SiDatabricks className="text-[20px]" />

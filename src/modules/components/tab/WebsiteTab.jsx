@@ -5,27 +5,27 @@ import ai1 from "../../../assets/1.png";
 import ai2 from "../../../assets/2.png";
 import ai3 from "../../../assets/3.png";
 import ai4 from "../../../assets/4.png";
-import finance1 from "../../../assets/finance1.png"
+import finance1 from "../../../assets/finance1.png";
 import finance2 from "../../../assets/finance2.png";
 import finance3 from "../../../assets/finance3.png";
-import ecommerce1 from "../../../assets/ecommerce1.png"
+import ecommerce1 from "../../../assets/ecommerce1.png";
 import ecommerce2 from "../../../assets/ecommerce2.png";
 import ecommerce3 from "../../../assets/ecommerce3.png";
 import ecommerce4 from "../../../assets/ecommerce4.png";
-import web31 from "../../../assets/web31.png"
+import web31 from "../../../assets/web31.png";
 import web32 from "../../../assets/web32.png";
 import web33 from "../../../assets/web33.png";
 import web34 from "../../../assets/web34.png";
-import portfolio1 from "../../../assets/portfolio1.png"
+import portfolio1 from "../../../assets/portfolio1.png";
 import portfolio2 from "../../../assets/portfolio2.png";
 import portfolio3 from "../../../assets/portofolio3.png";
 
-
 const categories = [
   {
-    name: "AI",
-    images: [ai1, ai2, ai3, ai4], // Example images for AI
+    name: "Web3",
+    images: [web31, web32, web33, web34], // Example images for Web3
   },
+
   {
     name: "Finance",
     images: [finance1, finance2, finance3], // Example images for Finance
@@ -35,8 +35,8 @@ const categories = [
     images: [ecommerce1, ecommerce2, ecommerce3, ecommerce4], // Example images for E-commerce
   },
   {
-    name: "Web3",
-    images: [web31, web32, web33, web34], // Example images for Web3
+    name: "AI",
+    images: [ai1, ai2, ai3, ai4], // Example images for AI
   },
   {
     name: "Portfolio",
@@ -67,7 +67,7 @@ export default function WebsiteTab() {
           <TabPanels className="mt-[4rem]">
             {categories.map(({ name, images }) => (
               <TabPanel key={name}>
-                <div className="grid md:grid-cols-3 gap-6 text-white">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 text-white">
                   {images.map((image, index) => (
                     <img
                       key={index}

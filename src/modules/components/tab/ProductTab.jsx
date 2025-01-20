@@ -38,10 +38,10 @@ const categories = [
     image: smartcodeai, // Image for SmartCode AI
   },
   {
-    name: "BuildSite AI",
+    name: "Website AI",
     description: "Instant Website Generation with BuildSite AI",
     content:
-      "BuildSite AI transforms your website’s title, description, and objectives into a fully functional, responsive site with optimized layouts and features.",
+      "WebSite AI transforms your website’s title, description, and objectives into a fully functional, responsive site with optimized layouts and features.",
     features: [
       "Creates complete websites from minimal input.",
       "Ensures optimal user experience and mobile responsiveness.",
@@ -131,8 +131,8 @@ export default function ProductTab() {
             {categories.map(
               ({ name, description, content, features, image }) => (
                 <TabPanel key={name}>
-                  <div className="grid md:grid-cols-2 text-white">
-                    <div className="col-span-1 md:w-[500px]">
+                  <div className="grid lg:grid-cols-2 md:gap-20 xl:gap-0 text-white">
+                    <div className="col-span-1 lg:w-[500px]">
                       <h3 className="text-[2rem]">{description}</h3>
                       <p className="my-5">{content}</p>
                       <div className="mt-10">
@@ -152,7 +152,7 @@ export default function ProductTab() {
                         </span>
                       </button>
                     </div>
-                    <div className="col-span-1 flex justify-center">
+                    <div className="col-span-1 flex lg:justify-center">
                       <img
                         className="rounded-[1.2rem]"
                         src={image}

@@ -4,7 +4,7 @@ import ProductTab from "../../components/tab/ProductTab";
 import DebugAi from "../../../assets/DebugAI.png"
 import SmartCodeAi from "../../../assets/SmartCodeAI.png"
 import BuildSiteAi from "../../../assets/BuildSiteAI.png"
-import DataFixAi from "../../../assets/DatFixAI.png"
+import DataFixAi from "../../../assets/DataFixAI.png"
 import HostEaseAi from "../../../assets/HostEaseAI.png"
 import CodeEdgeAi from "../../../assets/CodeEdgeAI.png"
 import LearnAi from "../../../assets/LearnAI.png"
@@ -19,7 +19,7 @@ export default function Products() {
     {
       title: "SmartCode AI",
       description: "Smart Coding Assistance with SmartCode AI",
-      colSpan: 4,
+      colSpan: 2,
       imgSrc: SmartCodeAi,
     },
     {
@@ -57,9 +57,9 @@ export default function Products() {
           <div className="w-[15px] h-[1px] bg-[#90f]" />
         </div>
       </div>
-      <h2 className="md:text-[3.5rem] text-[3rem] font-medium leading-[1] text-white  mt-6">
+      <h2 className="md:text-[3.5rem] text-[3rem] font-medium leading-[1] text-white  mt-6 md:w-[650px] xl-w-auto">
         Your Go-To AI Toolkit for
-        <br className="" /> Building and Creating using Quill AI
+        <br className="lg:flex hidden " /> Building and Creating using Quill AI
       </h2>
       <p className="text-[#c2c2c2] leading-[1.6] tracking-[-.02rem] text-[#fff9] md:w-[500px]  my-6">
         Build websites, enhance code, host projects, and more—empowered by the
@@ -71,12 +71,12 @@ export default function Products() {
           <FaChevronRight />
         </span>
       </button>
-      <div className="grid md:grid-cols-8 grid-cols-1 gap-6 mt-20 text-white">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-6 mt-20 text-white">
         {aiTools.map((tool, index) => (
           <div
             key={index}
-            className={`relative md:col-span-${
-              tool.colSpan || 2
+            className={`relative lg:col-span-${
+              tool.colSpan || 1
             } bg-white/5 h-[350px] rounded-[1.5rem] border border-[#ffffff14] p-5 text-center flex flex-col justify-end items-center cursor-pointer`}
             style={{
               backgroundImage: `url(${tool.imgSrc})`,

@@ -17,6 +17,7 @@ function App() {
       <SubHero />
       <Products />
       <HeroParallaxDemo />
+      <Varieties/>
       <Footer />
       <BottomFooter />
     </div>
